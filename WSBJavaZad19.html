@@ -62,25 +62,13 @@
     <script>
         var ss = 0;
         var stt;
-        var int = setInterval(mytime, 1000);
-        document.getElementById("sto").innerHTML = ss;
-        function mytime() {
-            var d = new Date ().toLocaleTimeString();
-            document.getElementById("time_p").innerHTML = d;
-        }
+        
         function start() {
           clearInterval(stt);
           stt = setInterval(start_time, 1);
         }
         function start_time() {
           ss += 1;
-          document.getElementById("sto").innerHTML = ss;
-        }
-        function stop() {
-          clearInterval(stt);
-        }
-        function reset() {
-          ss = 0;
           document.getElementById("sto").innerHTML = ss;
         }
     </script>

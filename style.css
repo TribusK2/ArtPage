@@ -5,7 +5,7 @@ html, body {
     background-color: greenyellow;
     width: 2000px;
 }
-#time {
+#clock {
     position: absolute;
     margin: 50px;
     z-index: 3;
