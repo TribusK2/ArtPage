@@ -7,7 +7,7 @@ html, body {
 }
 #clock {
     position: absolute;
-    margin: 50px;
+    margin-left: 1200px;
     z-index: 3;
 }
 :root{
