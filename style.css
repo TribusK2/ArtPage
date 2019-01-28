@@ -12,37 +12,38 @@ html, body {
 }
 :root{
     --sky-gradient-day: linear-gradient(#00afe4, #dcf4fcff);
-    --sky-gradient-night: linear-gradient(#00001a, #27005a);
+    --sky-gradient-night: linear-gradient(#000000, #14002e);
 }
 @keyframes sky{
     0% {opacity: 0;}
-    10% {opacity: 0;}
+    20% {opacity: 0;}
     40% {opacity: 1;}
     60% {opacity: 1;}
-    90% {opacity: 0;}
+    80% {opacity: 0;}
     100% {opacity: 0;}
 }
 #skyDay {
    width: 2000px;
-   height: 380px;
+   height: 42vh;
    position: absolute;
    background: linear-gradient(#00afe4, #dcf4fcff);
-   animation: sky 20s infinite;
+   animation: sky 36s infinite;
+   animation-delay: 0s;
    z-index: 2;
 }
 #skyNight {
    width: 2000px;
-   height: 380px;
+   height: 42vh;
    position: absolute;
-   background: linear-gradient(#00001a, #27005a);
-   animation: sky 20s infinite;
-   animation-delay: -10s;
+   background: linear-gradient(#000000, #2b1e4b);
+   animation: sky 36s infinite;
+   animation-delay: -18s;
    z-index: 2;
 }
 #skyBackgroud {
    width: 2000px;
-   height: 380px;
+   height: 42vh;
    position: absolute;
-   background: linear-gradient(#fad840, #ff7b00);
+   background: linear-gradient(#5cffe4, #f7d953, #fd453f);
    z-index: 1;
 }
